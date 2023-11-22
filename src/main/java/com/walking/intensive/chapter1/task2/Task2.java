@@ -17,7 +17,7 @@ public class Task2 {
         int totalFlatsEntrance = floorAmount * totalFlatFloor; // итого квартир в подъезде
 
         if (flatNumber < 1 || flatNumber > (entranceAmount * totalFlatsEntrance)) {
-            return "Квартиры с таким номером в доме нет";
+            return "Такой квартиры не существует";
         }
 
         int entranceNumber;
