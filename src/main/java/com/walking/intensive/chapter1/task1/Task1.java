@@ -10,7 +10,7 @@ public class Task1 {
     }
 
     static String getAgeString(int age) {
-        if (age < 1 || age > 127) {
+        if (age < 0 || age > 127) {
             return "Введенное число за пределами заданного периода.\n" +
                     "Запустите программу снова и введите число от 1 до 127 включительно.";
         }
