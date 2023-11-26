@@ -4,9 +4,7 @@ package com.walking.intensive.chapter1.task1;
  */
 public class Task1 {
     public static void main(String[] args) {
-        int age = 127;
 
-        System.out.println(getAgeString(age));
     }
 
     static String getAgeString(int age) {
@@ -15,14 +13,17 @@ public class Task1 {
                     "Запустите программу снова и введите число от 1 до 127 включительно.";
         }
 
-        if ((age >= 11 && age <= 14) || (age >= 111 && age <= 114)) {
-            return "Вам " + age + " лет";
-        } else if (age % 10 == 1) {
+        int lastDigit = age % 10;
+        int last2Digits = age % 100;
+
+        if (lastDigit == 1 && last2Digits != 11) {
             return "Вам " + age + " год";
-        } else if (age % 10 == 2 || age % 10 == 3 || age % 10 == 4) {
-            return "Вам " + age + " года";
-        } else {
-            return "Вам " + age + " лет";
         }
+
+        if (lastDigit >= 2 && lastDigit <= 4 && (last2Digits < 12 || last2Digits > 14)) {
+            return "Вам " + age + " года";
+        }
+
+        return "Вам " + age + " лет";
     }
 }
