@@ -5,9 +5,7 @@ package com.walking.intensive.chapter2.task6;
  */
 public class Task6 {
     public static void main(String[] args) {
-        System.out.println(getNoc(1000, 2000));
-        System.out.println(getNod(1000, 2000));
-        System.out.println(getNodByEuclideanAlgorithm(1000, 2000));
+
     }
 
     static int getNoc(int m, int n) {
@@ -31,6 +29,5 @@ public class Task6 {
 
         return getNodByEuclideanAlgorithm(n, m % n);
     }
-
 
 }
