@@ -32,19 +32,5 @@ public class Task6 {
         return getNodByEuclideanAlgorithm(n, m % n);
     }
 
-    static int getNoc(int m, int n) {
-        // Ваш код
-        return 0;
-    }
-
-    static int getNod(int m, int n) {
-        // Ваш код
-        return 0;
-    }
-
-    static int getNodByEuclideanAlgorithm(int m, int n){
-        // Ваш код
-        return 0;
-    }
 
 }
